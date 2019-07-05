@@ -36,13 +36,11 @@
             <h2 id="title">対応されている通貨</h2>
             <table border="1">
                 <?php 
-                    if ($response_json === false){
-                        echo "<tr><td>Connection failure!</tr></td>";
-                    } else {
+                    
                         foreach ($ratearray as $key => $name){
                             echo "<tr><td>".$name."</td><td>" . round($rates->rates->$key,2) .$name. "</td></tr>";
                         }
-                    }
+
                 ?>
             </table>
             <br>

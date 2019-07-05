@@ -1,7 +1,4 @@
 <?php 
-if ($response_json === false){
-        echo "Connection failure!";
-    } else {
         if(is_numeric(isset($_POST['amount'])) && $_POST['currency1'] === $_POST['currency2']){
             //checks if there is an input in amount AND cur1 and 2 are the same
             echo htmlentities($amount * 1 .@${"c_$currency2"}."です。");
@@ -26,5 +23,5 @@ if ($response_json === false){
                     //if there is no input, shows this
                     }
             }
-    }
+
 ?>

@@ -23,7 +23,7 @@
         <div id="main">
             <div class="php">updated as of: <?php 
                 date_default_timezone_set('Asia/Tokyo');
-                echo date("y/m/d"). " " .date ("H:i") ?></div>
+                echo date("F d Y",filemtime("$file")). " " .date("H:i",filemtime("$file")) ?></div>
             <form action="index.php" method="post">
                 <table border="0">
                     <tr>
@@ -88,6 +88,7 @@
         <div id="phpresult">
             <?php 
         include "formula.php";
+            
             ?>
         </div>
         <div id="footer">
