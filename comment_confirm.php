@@ -9,41 +9,18 @@
 </head>
 
 <body>
-    <!-- PHP CODE -->
-    <!-- PHP CODE -->
-    <!-- PHP CODE -->
-    <?php 
-    // CURL codes
-    include "handles.php";
-    ?>
-    <!-- PHP CODE -->
-    <!-- PHP CODE -->
-    <!-- PHP CODE -->
-
     <div id="wrap">
         <div id="menu">
             <a href="index.php">Top</a>
             <a href="supported.php">Rates</a>
+            <a href="comment.php">Comments</a>
         </div>
         <div id="header">
             <h1><a href="index.php#amount">Yogi's Money Exchange</a></h1>
         </div>
         <div id="main">
-            <div class="php">updated as of: <?php 
-                date_default_timezone_set('Asia/Tokyo');
-                echo date("F d Y",filemtime("$file")). " " .date("H:i",filemtime("$file")) ?></div>
-            <br>
-            <h2 id="title">対応されている通貨</h2>
-            <table border="1">
-                <?php 
-                    
-                        foreach ($ratearray as $key => $name){
-                            echo "<tr><td>".$name."</td><td>" . round($rates->rates->$key,2) .$name. "</td></tr>";
-                        }
-                    
-                ?>
-            </table>
-            <br>
+            <h2>Thank you for your submission!</h2>
+            <?php header("refresh:2; index.php") ?>
         </div>
         <div id="footer">
             <div id="container">

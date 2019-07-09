@@ -95,7 +95,6 @@
             <div id="container">
                 <div id="footer-left">
                     <p>制作者をフォローする</p>
-                    <!-- Place this tag where you want the button to render. -->
                     <a class="github-button" href="https://github.com/eugenesinamban" aria-label="Follow @eugenesinamban on GitHub">Follow @eugenesinamban</a><br>
                     <a href="https://twitter.com/EugeneSinamban?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false" target="_blank">Follow @EugeneSinamban</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
