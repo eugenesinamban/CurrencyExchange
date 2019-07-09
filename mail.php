@@ -2,6 +2,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+// uses phpmailer via composer
 require 'C:\xampp\composer\vendor\autoload.php';
 
 $mail = new PHPMailer(TRUE);
