@@ -8,8 +8,8 @@ $mail = new PHPMailer(TRUE);
 include "comment_handles.php";
 try {
    
-   $mail->setFrom('eugene.sinamban@gmail.com', 'Eugene Sinamban');
-   $mail->addAddress('eugene@yogiexchange.rf.gd', 'Yogiexchange');
+   $mail->setFrom('from@mail.com', 'Mail Sender');
+   $mail->addAddress('to@mail.com', 'Mail Recepient');
    $mail->Subject = 'Comments From: '. $from;
    $mail->Body = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
    
@@ -28,10 +28,10 @@ try {
    $mail->SMTPSecure = 'tls';
    
    /* SMTP authentication username. */
-   $mail->Username = 'eugene.sinamban@gmail.com';
+   $mail->Username = 'own.email@mail.com';
    
    /* SMTP authentication password. */
-   $mail->Password = 'ofbdfotodunvknxt';
+   $mail->Password = '**************';
    
    /* Set the SMTP port. */
    $mail->Port = 587;
